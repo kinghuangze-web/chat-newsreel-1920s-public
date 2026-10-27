@@ -4,3 +4,11 @@ __pycache__/
 node_modules/
 dist/
 validation/
+
+# 本地制作产物与真实素材：不进公开仓库（见 docs/PUBLIC_RELEASE.md）
+work/
+ep01/
+ep02/
+tools_local/
+stills/
+out/
