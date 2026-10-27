@@ -27,7 +27,8 @@ metadata:
 1. 先读 [references/setup-windows.md](references/setup-windows.md)，把环境一次搭对。这一步没做完，后面所有报错都是噪音。
 2. 按用户选定的入口读编辑与制作规范。
 3. 制作过程中遇到卡点，查 [references/pitfalls.md](references/pitfalls.md)。按「现象」检索，每条都有原因和解法。
-4. 交付前过 [references/acceptance.md](references/acceptance.md)。
+4. 需要对齐成品效果时，读 [references/case-ep01.md](references/case-ep01.md)。那是一条已完成片子的全部实测参数：12 段时长分配、画布与安全区、6 处转场、6 个道具的构图骨架、人声与配乐比例。按它填自己的内容，形态就能对上。
+5. 交付前过 [references/acceptance.md](references/acceptance.md)。
 
 ## 平台差异速览
 

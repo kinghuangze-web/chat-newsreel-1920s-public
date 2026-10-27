@@ -161,7 +161,7 @@ ls -la index.html
 
 出 `index.html` 就说明拼装链路通了。
 
-接着试静帧。Windows 上 `build.sh stills` 会因为路径风格失败（见 [pitfalls.md](pitfalls.md) 第 12 条），手动跑：
+接着试静帧。Windows 上 `build.sh stills` 会因为路径风格失败（见 [pitfalls.md](pitfalls.md) 第 15 条），手动跑：
 
 ```sh
 cd /d/work/newsreel/ep01
@@ -183,5 +183,5 @@ ls /d/work/newsreel/ep01/stills/
 | `python3: command not found` | 垫片没建 | 第 5 步 |
 | `Failed to launch chromium` | 浏览器没下 | 第 6 步 |
 | `curl: (35) schannel` | 走不通 GitHub | 第 7 步 |
-| `FileNotFoundError: .../timeline.json` | MSYS 路径传给了 Windows Python | [pitfalls.md](pitfalls.md) 第 12 条 |
-| 渲染卡在 0% | 内存不够，worker 开太多 | [pitfalls.md](pitfalls.md) 第 26 条 |
+| `FileNotFoundError: .../timeline.json` | MSYS 路径传给了 Windows Python | [pitfalls.md](pitfalls.md) 第 15 条 |
+| 渲染卡在 0% | 内存不够，worker 开太多 | [pitfalls.md](pitfalls.md) 第 29 条 |

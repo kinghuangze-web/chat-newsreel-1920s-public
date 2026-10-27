@@ -1,12 +1,13 @@
 # WorkBuddy 入口
 
-2026-10-27，在 WorkBuddy（Windows 11 + Git Bash）上把本工作流完整跑通一次，从拉仓库到出片，中间卡了二十来处。这个目录记录的就是那些卡点和解决方式。
+2026-10-27，在 WorkBuddy（Windows 11 + Git Bash）上把本工作流完整跑通一次，从拉仓库到出片，中间卡了三十处。这个目录记录的就是那些卡点和解决方式，外加一份已完成片子的实测参数。
 
 | 项目 | 位置 |
 |---|---|
 | Skill 入口 | [skills/workbuddy-1920s-news/SKILL.md](skills/workbuddy-1920s-news/SKILL.md) |
 | 环境搭建 | [skills/workbuddy-1920s-news/references/setup-windows.md](skills/workbuddy-1920s-news/references/setup-windows.md) |
 | 踩坑记录 | [skills/workbuddy-1920s-news/references/pitfalls.md](skills/workbuddy-1920s-news/references/pitfalls.md) |
+| 实测参照 | [skills/workbuddy-1920s-news/references/case-ep01.md](skills/workbuddy-1920s-news/references/case-ep01.md) |
 | 验收清单 | [skills/workbuddy-1920s-news/references/acceptance.md](skills/workbuddy-1920s-news/references/acceptance.md) |
 
 ## 边界
@@ -40,3 +41,5 @@ cp -r skills/workbuddy-1920s-news ~/.workbuddy-ai/skills/
 - 长命令怎么放后台
 
 另外记了一批与平台无关、但在这次制作里真实踩到的画面问题：报纸推近切栏、片门标题溢出、表盘文字被指针穿过、投影段开头空画面。这些不是 WorkBuddy 特有的，写在这里只是因为这次是在 WorkBuddy 上遇到的。
+
+[case-ep01.md](skills/workbuddy-1920s-news/references/case-ep01.md) 是另一种东西：不含问题，只有一条已完成片子的实测参数。12 段的时长分配、画布与安全区、6 处转场、6 个道具的构图坐标、人声与配乐的比例。照着填自己的内容，成品形态能对上。
