@@ -18,6 +18,7 @@ metadata:
 ## 什么时候用
 
 - 在 Windows 上第一次搭这套环境
+- 导出的聊天记录是空的，或报 `file is not a database`
 - `sh build.sh` 报了找不到 Python、找不到 timeline.json、字体下载失败
 - 渲染或合成卡住、超时、内存吃满
 - 需要判断「这个报错是环境问题还是内容问题」
@@ -25,10 +26,11 @@ metadata:
 ## 执行顺序
 
 1. 先读 [references/setup-windows.md](references/setup-windows.md)，把环境一次搭对。这一步没做完，后面所有报错都是噪音。
-2. 按用户选定的入口读编辑与制作规范。
-3. 制作过程中遇到卡点，查 [references/pitfalls.md](references/pitfalls.md)。按「现象」检索，每条都有原因和解法。
-4. 需要对齐成品效果时，读 [references/case-ep01.md](references/case-ep01.md)。那是一条已完成片子的全部实测参数：12 段时长分配、画布与安全区、6 处转场、6 个道具的构图骨架、人声与配乐比例。按它填自己的内容，形态就能对上。
-5. 交付前过 [references/acceptance.md](references/acceptance.md)。
+2. 用 [references/export-windows.md](references/export-windows.md) 把聊天记录导出来。`wechat-cli` 在 Windows 上会挑错账号库，这份文件给了判断方法和兜底解密。
+3. 按用户选定的入口读编辑与制作规范。
+4. 制作过程中遇到卡点，查 [references/pitfalls.md](references/pitfalls.md)。按「现象」检索，每条都有原因和解法。
+5. 需要对齐成品效果时，读 [references/case-ep01.md](references/case-ep01.md)。那是一条已完成片子的全部实测参数：12 段时长分配、画布与安全区、6 处转场、6 个道具的构图骨架、人声与配乐比例。按它填自己的内容，形态就能对上。
+6. 交付前过 [references/acceptance.md](references/acceptance.md)。
 
 ## 平台差异速览
 

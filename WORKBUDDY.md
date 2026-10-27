@@ -6,6 +6,7 @@
 |---|---|
 | Skill 入口 | [skills/workbuddy-1920s-news/SKILL.md](skills/workbuddy-1920s-news/SKILL.md) |
 | 环境搭建 | [skills/workbuddy-1920s-news/references/setup-windows.md](skills/workbuddy-1920s-news/references/setup-windows.md) |
+| 微信导出 | [skills/workbuddy-1920s-news/references/export-windows.md](skills/workbuddy-1920s-news/references/export-windows.md) |
 | 踩坑记录 | [skills/workbuddy-1920s-news/references/pitfalls.md](skills/workbuddy-1920s-news/references/pitfalls.md) |
 | 实测参照 | [skills/workbuddy-1920s-news/references/case-ep01.md](skills/workbuddy-1920s-news/references/case-ep01.md) |
 | 验收清单 | [skills/workbuddy-1920s-news/references/acceptance.md](skills/workbuddy-1920s-news/references/acceptance.md) |
@@ -34,6 +35,7 @@ cp -r skills/workbuddy-1920s-news ~/.workbuddy-ai/skills/
 本版记录了这些具体的差异：
 
 - `.venv/bin/python` 垫片怎么写
+- `wechat-cli` 为什么在 Windows 上挑错账号库，怎么判断
 - `build.sh stills` 为什么在 Git Bash 里找不到 `timeline.json`
 - 字体从哪下（GitHub 网页不通，`raw.*` 通）
 - 音色采样库下不来时怎么绕过
