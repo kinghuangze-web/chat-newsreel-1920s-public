@@ -1,0 +1,224 @@
+{
+ "mode": "band",
+ "bpm": 200.0,
+ "beat": 0.3,
+ "bar": 1.2,
+ "g0": 0.0,
+ "m0": 0.0,
+ "dur": 52.8,
+ "secs": [
+  {
+   "id": "logo",
+   "t0": 0.0,
+   "t1": 3.6,
+   "bar0": 0
+  },
+  {
+   "id": "paper",
+   "t0": 3.6,
+   "t1": 9.6,
+   "bar0": 3
+  },
+  {
+   "id": "map",
+   "t0": 9.6,
+   "t1": 16.8,
+   "bar0": 8
+  },
+  {
+   "id": "card",
+   "t0": 16.8,
+   "t1": 19.8,
+   "bar0": 14
+  },
+  {
+   "id": "tele",
+   "t0": 19.8,
+   "t1": 25.8,
+   "bar0": 16.5
+  },
+  {
+   "id": "grid",
+   "t0": 25.8,
+   "t1": 29.4,
+   "bar0": 21.5
+  },
+  {
+   "id": "quote",
+   "t0": 29.4,
+   "t1": 31.8,
+   "bar0": 24.5
+  },
+  {
+   "id": "repeat",
+   "t0": 31.8,
+   "t1": 36.0,
+   "bar0": 26.5
+  },
+  {
+   "id": "weather",
+   "t0": 36.0,
+   "t1": 40.8,
+   "bar0": 30
+  },
+  {
+   "id": "clock",
+   "t0": 40.8,
+   "t1": 44.4,
+   "bar0": 34
+  },
+  {
+   "id": "endlogo",
+   "t0": 44.4,
+   "t1": 48.0,
+   "bar0": 37
+  },
+  {
+   "id": "endcard",
+   "t0": 48.0,
+   "t1": 52.8,
+   "bar0": 40
+  }
+ ],
+ "hits": {
+  "beams_on": 0.15,
+  "logo_iris": 3.0,
+  "paper_fly": 3.6,
+  "paper_slam": 4.8,
+  "paper_punch": 7.2,
+  "quote_ring": 7.55,
+  "wipe_map": 9.6,
+  "sz": 9.9,
+  "count0": 10.2,
+  "count1": 12.6,
+  "arc_1": 13.2,
+  "arc_2": 13.8,
+  "arc_3": 14.4,
+  "map_push": 15.6,
+  "blinds_card": 16.8,
+  "stop_card": 16.8,
+  "iris_tele": 19.8,
+  "strip1": 20.1,
+  "strip2": 21.0,
+  "strip3": 21.9,
+  "stamp1": 23.1,
+  "stamp2": 24.3,
+  "cut_grid": 25.8,
+  "deal0": 26.1,
+  "slam_quote": 29.4,
+  "quote_ring2": 30.3,
+  "cut_repeat": 31.8,
+  "rep0": 32.1,
+  "flip_weather": 36.0,
+  "wx1": 36.6,
+  "wx2": 37.2,
+  "wx3": 37.8,
+  "wx4": 38.4,
+  "clock_wipe": 40.8,
+  "stop_btn": 40.8,
+  "clock_ring": 42.0,
+  "iris_end": 44.4,
+  "end_hit1": 44.4,
+  "end_hit2": 44.85,
+  "endcard": 48.0
+ },
+ "lines": [
+  {
+   "id": "L1",
+   "t": 4.08,
+   "zh": "号外！阿甲开源新工具，一晚上收了三百颗星！",
+   "en": "Extra! A-Jia open-sources a tool: three hundred stars overnight!"
+  },
+  {
+   "id": "L2",
+   "t": 10.02,
+   "zh": "深圳急电！周末聚会，接龙十二人！",
+   "en": "Shenzhen calling! A weekend meet-up: twelve sign up!"
+  },
+  {
+   "id": "L3",
+   "t": 13.32,
+   "zh": "杭州、北京、上海的群友，也在路上！",
+   "en": "Hangzhou, Beijing, Shanghai: all on their way!"
+  },
+  {
+   "id": "L4",
+   "t": 20.04,
+   "zh": "深夜急电：服务器又挂了！",
+   "en": "Midnight wire: the server's down again!"
+  },
+  {
+   "id": "L5",
+   "t": 22.8,
+   "zh": "重启三次，零点十分，阿丙修好了！",
+   "en": "Three reboots later, ten past midnight, A-Bing fixed it!"
+  },
+  {
+   "id": "L6",
+   "t": 26.1,
+   "zh": "新工具上线，群友纷纷点星！",
+   "en": "The new tool is out, and the stars pour in!"
+  },
+  {
+   "id": "L7",
+   "t": 29.52,
+   "zh": "老王表示：明天我也写一个！",
+   "en": "Lao Wang says: tomorrow I'll write one too!"
+  },
+  {
+   "id": "L8",
+   "t": 32.16,
+   "zh": "夜深了，全群齐声：早点睡！",
+   "en": "Late at night, the whole group: get some sleep!"
+  },
+  {
+   "id": "L9",
+   "t": 36.3,
+   "zh": "天气预报：深圳晴，北京小雪，注意保暖！",
+   "en": "The weather: sun in Shenzhen, snow in Beijing. Keep warm!"
+  },
+  {
+   "id": "L10",
+   "t": 41.28,
+   "zh": "二十三点五十八分，最后一条：明天见。",
+   "en": "Eleven fifty-eight. The last word: see you tomorrow."
+  }
+ ],
+ "tags": [
+  {
+   "sec": "paper",
+   "t0": 5.0,
+   "t1": 9.12,
+   "en": "GITHUB · JAN. 15, 08:00",
+   "zh": "开源新作"
+  },
+  {
+   "sec": "map",
+   "t0": 9.9,
+   "t1": 12.96,
+   "en": "SHENZHEN · JAN. 17",
+   "zh": "周末线下"
+  },
+  {
+   "sec": "tele",
+   "t0": 20.2,
+   "t1": 23.04,
+   "en": "SERVER · 23:40",
+   "zh": "深夜机房"
+  },
+  {
+   "sec": "repeat",
+   "t0": 32.1,
+   "t1": 35.04,
+   "en": "DEMO GROUP · 23:55",
+   "zh": "全群复读"
+  },
+  {
+   "sec": "weather",
+   "t0": 36.3,
+   "t1": 40.08,
+   "en": "NMC · JAN. 15, 18:00",
+   "zh": "中央气象台"
+  }
+ ]
+}

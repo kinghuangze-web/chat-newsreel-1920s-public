@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex 1920s新闻联播"
+  short_description: "把授权群聊与真实素材编排成有承接、有证据的1920s黑白新闻片"
+  default_prompt: "使用 $codex-1920s-news，把指定时段群聊做成1920s新闻联播，先读上下文，按事件设计画面和承接，并检查最终成片。"

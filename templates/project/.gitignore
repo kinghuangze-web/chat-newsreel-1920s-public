@@ -1,0 +1,9 @@
+fonts/*.ttf
+voice/out/
+out/
+stills/
+index.html
+audio/bgm_src.wav
+assets/ne_50m_land.geojson
+work/*
+!work/demo_chat.txt

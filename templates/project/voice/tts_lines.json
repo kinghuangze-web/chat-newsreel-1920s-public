@@ -1,0 +1,82 @@
+[
+ {
+  "id": "L1",
+  "text": "号外！阿甲开源新工具，一晚上收了三百颗星！",
+  "say": "号外！阿甲开源新工具，一晚上收了三百颗星！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L2",
+  "text": "深圳急电！周末聚会，接龙十二人！",
+  "say": "深圳急电！周末聚会，接龙十二人！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L3",
+  "text": "杭州、北京、上海的群友，也在路上！",
+  "say": "杭州、北京、上海的群友，也在路上！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L4",
+  "text": "深夜急电：服务器又挂了！",
+  "say": "深夜急电：服务器又挂了！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L5",
+  "text": "重启三次，零点十分，阿丙修好了！",
+  "say": "重启三次，零点十分，阿丙修好了！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L6",
+  "text": "新工具上线，群友纷纷点星！",
+  "say": "新工具上线，群友纷纷点星！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L7",
+  "text": "老王表示：明天我也写一个！",
+  "say": "老王表示：明天我也写一个！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L8",
+  "text": "夜深了，全群齐声：早点睡！",
+  "say": "夜深了，全群齐声：早点睡！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L9",
+  "text": "天气预报：深圳晴，北京小雪，注意保暖！",
+  "say": "天气预报：深圳晴，北京小雪，注意保暖！",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ },
+ {
+  "id": "L10",
+  "text": "二十三点五十八分，最后一条：明天见。",
+  "say": "二十三点五十八分，最后一条：明天见。",
+  "voice": "zh-CN-YunjianNeural",
+  "rate": "+22%",
+  "pitch": "+6Hz"
+ }
+]

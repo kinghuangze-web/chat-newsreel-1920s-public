@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Chat Newsreel</title>
+<style>
+@font-face{font-family:Limelight;src:url(fonts/Limelight.ttf)}
+@font-face{font-family:Oswald;src:url(fonts/Oswald.ttf);font-weight:200 700}
+@font-face{font-family:"Noto Sans SC";src:url(fonts/NotoSansSC.ttf);font-weight:100 900}
+@font-face{font-family:"Noto Serif SC";src:url(fonts/NotoSerifSC.ttf);font-weight:200 900}
+html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}
+</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script type="module">
+import { clamp, lerp, seg, ss, eio, eo, ei, back, hash, vnoise, TAU } from '/core/lib.js';
+const W = 1920, H = 1080, GX = 220, GW = 1480, GH = 1080, FPS = 24;
+const cv = document.getElementById('c'), X = cv.getContext('2d');
+const mk = (w, h) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
+const PIC = mk(GW, GH), P = PIC.getContext('2d'), TMP = mk(GW, GH), T2 = TMP.getContext('2d');
+const FROM = mk(GW, GH), F1 = FROM.getContext('2d'), AUX = mk(GW, GH), AX = AUX.getContext('2d');
+const TL = await (await fetch('timeline.json')).json();
+const VD = await (await fetch('voice/out/dur.json')).json();
+const MAP = await fetch('assets/map.json').then(r => r.ok ? r.json() : { polys: [], cities: {} });
+const HIT = TL.hits, SEC = Object.fromEntries(TL.secs.map(s => [s.id, s]));
+const BEAT = TL.beat, BAR = TL.bar;
+const NOSUB = new URLSearchParams(location.search).has('nosub');
+window.DUR = TL.dur;
+const CL = {};
+for (const f of ['100px Limelight', '600 30px Oswald', '400 28px Oswald', '500 30px "Noto Sans SC"', '600 40px "Noto Sans SC"', '800 40px "Noto Sans SC"', '900 50px "Noto Serif SC"', '500 30px "Noto Serif SC"', '700 30px "Noto Serif SC"'])
+  await document.fonts.load(f, '新闻日报群聊天气预报本期完');

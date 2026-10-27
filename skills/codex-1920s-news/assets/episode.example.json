@@ -1,0 +1,19 @@
+{
+  "fps": 24,
+  "opening_seconds": 4,
+  "source_window": ["2030-01-01 09:00:00", "2030-01-01 18:00:00"],
+  "source_ids": ["fictional-message-01", "fictional-message-02"],
+  "host_line": "H0",
+  "goodbye_line": "H1",
+  "stories": [
+    {"id": "workflow", "line_ids": ["A1"], "composition": "Dispatch board with a visible human confirmation gate"},
+    {"id": "progress", "bridge": {"line_id": "B1", "relation": "From task assignment to observing progress; separate authors, no asserted shared system"}, "line_ids": ["A2"], "composition": "Matched office screenshot, establish then push toward its task card"}
+  ],
+  "narration": [
+    {"id": "H0", "zh": "本台消息，我是主持人。", "role": "wrapper"},
+    {"id": "A1", "zh": "甲分享了先确认、再派发的流程。", "role": "fact", "source_ids": ["fictional-message-01"]},
+    {"id": "B1", "zh": "派发之后，进度又怎么看？", "role": "editorial"},
+    {"id": "A2", "zh": "乙展示了多会话任务看板。", "role": "fact", "source_ids": ["fictional-message-02"]},
+    {"id": "H1", "zh": "我们下期见。", "role": "wrapper"}
+  ]
+}
