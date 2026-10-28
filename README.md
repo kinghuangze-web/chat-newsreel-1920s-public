@@ -6,9 +6,11 @@
 |---|---|---|
 | Claude：原工作流 | [根目录 SKILL.md](SKILL.md) | `references/`、`templates/`；保留原片头/栏目/唱片与片尾方法 |
 | Codex：1.0.1 | [codex-1920s-news](skills/codex-1920s-news/SKILL.md) | 该子目录自己的规范、脚本和虚构输入；主题承接、事件素材、文字保护与独立验收 |
-| WorkBuddy：Windows 实测 | [workbuddy-1920s-news](skills/workbuddy-1920s-news/SKILL.md) | 一份可独立执行的作业规范：执行序列、必问用户的六个节点、硬参数、30 条踩坑、验收判定；另含 Git Bash 与微信选库的平台差异 |
+| WorkBuddy：Windows 实测 | [workbuddy-1920s-news](skills/workbuddy-1920s-news/SKILL.md) | 一份可独立执行的作业规范：执行序列、必问用户的六个节点、硬参数、31 条踩坑、验收判定；另含 Git Bash 与微信选库的平台差异 |
 
 WorkBuddy 版没有修改前两版的任何内容。它把这条流水线在 Windows 上完整跑通过一次，把过程中的判断、卡点和参数固定下来，使接手者不必重走。
+
+**第一次用、或者不想碰技术细节的话，先读 [docs/TUTORIAL.md](docs/TUTORIAL.md)。** 那份是给人看的：每一步该跟 AI 说什么（可直接复制）、哪一步必须你自己拍板、怎么验收 AI 交出来的东西。上面那个 Skill 是给 Agent 查的命令与参数，两者内容一致，读者不同。
 
 Claude 版的固定栏目、片尾和声音处方，与 Codex 版可能不同。这是两个版本的差异，不自动互相同步或统一。WorkBuddy 版按 Claude 版的编辑口径制作，环境与操作细节以自己那份为准。
 
