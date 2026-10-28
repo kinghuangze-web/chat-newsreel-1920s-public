@@ -2,8 +2,11 @@
 
 2026-10-27，在 WorkBuddy（Windows 11 + Git Bash）上把本工作流完整跑通一次，从拉仓库到出片，中间卡了三十处。这个目录记录的就是那些卡点和解决方式，外加一份已完成片子的实测参数。
 
+给人看的完整流程在 [docs/USAGE.md](docs/USAGE.md)：分工怎么划、每一步该对 AI 说什么话、出问题时怎么描述。下面这些是给 Agent 查的。
+
 | 项目 | 位置 |
 |---|---|
+| 使用手册 | [docs/USAGE.md](docs/USAGE.md) |
 | Skill 入口 | [skills/workbuddy-1920s-news/SKILL.md](skills/workbuddy-1920s-news/SKILL.md) |
 | 环境搭建 | [skills/workbuddy-1920s-news/references/setup-windows.md](skills/workbuddy-1920s-news/references/setup-windows.md) |
 | 微信导出 | [skills/workbuddy-1920s-news/references/export-windows.md](skills/workbuddy-1920s-news/references/export-windows.md) |

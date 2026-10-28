@@ -6,7 +6,7 @@
 |---|---|---|
 | Claude：原工作流 | [根目录 SKILL.md](SKILL.md) | `references/`、`templates/`；保留原片头/栏目/唱片与片尾方法 |
 | Codex：1.0.1 | [codex-1920s-news](skills/codex-1920s-news/SKILL.md) | 该子目录自己的规范、脚本和虚构输入；主题承接、事件素材、文字保护与独立验收 |
-| WorkBuddy：Windows 补充 | [workbuddy-1920s-news](skills/workbuddy-1920s-news/SKILL.md) | 只补 Git Bash 路径、虚拟环境垫片、沙箱、字体与音色库下载等平台差异，以及实测踩坑；编辑与制作规范仍按用户选定的前两套执行 |
+| WorkBuddy：Windows 补充 | [workbuddy-1920s-news](skills/workbuddy-1920s-news/SKILL.md) | 补 Git Bash 路径、虚拟环境垫片、沙箱、字体与音色库下载、微信库选错账号等平台差异，附 30 条实测踩坑与一份成品参数参照；另有[使用手册](docs/USAGE.md)。编辑与制作规范仍按用户选定的前两套执行 |
 
 WorkBuddy 版没有修改前两版的任何内容，边界与安装方式见 [WORKBUDDY.md](WORKBUDDY.md)。
 
@@ -18,7 +18,7 @@ Claude Code：将本仓库作为 `chat-newsreel-1920s` Skill，入口为根目�
 
 Codex：只复制 `skills/codex-1920s-news/` 到当前 Codex 的 Skills 目录，让客户端发现后调用 `$codex-1920s-news`。不要用根目录 Claude 入口替代它。
 
-WorkBuddy：只复制 `skills/workbuddy-1920s-news/` 到 `~/.workbuddy-ai/skills/`。它补充 Windows 与 Git Bash 环境差异，不替代前两套规范；按用户选定的 Claude 或 Codex 入口执行制作，遇到平台问题再查它。
+WorkBuddy：只复制 `skills/workbuddy-1920s-news/` 到 `~/.workbuddy-ai/skills/`。它补充 Windows 与 Git Bash 环境差异，不替代前两套规范；按用户选定的 Claude 或 Codex 入口执行制作，遇到平台问题再查它。不熟悉这条流水线的人，先读 [docs/USAGE.md](docs/USAGE.md)，那份是给人看的。
 
 三版均依赖 [Lemo-Opuscar](https://github.com/lemomo-ai/lemo-opuscar) 的渲染与相关运行时，以及用户授权的输入、字体和媒体。Codex 子包不自带微信导出器、AI模型、IP、音乐或独立一键渲染器；运行契约见其 `references/runtime.md`。
 
