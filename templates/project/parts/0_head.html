@@ -16,7 +16,7 @@ const mk = (w, h) => { const c = document.createElement('canvas'); c.width = w; 
 const PIC = mk(GW, GH), P = PIC.getContext('2d'), TMP = mk(GW, GH), T2 = TMP.getContext('2d');
 const FROM = mk(GW, GH), F1 = FROM.getContext('2d'), AUX = mk(GW, GH), AX = AUX.getContext('2d');
 const TL = await (await fetch('timeline.json')).json();
-const VD = await (await fetch('voice/out/dur.json')).json();
+const VD = await fetch('voice/out/dur.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
 const MAP = await fetch('assets/map.json').then(r => r.ok ? r.json() : { polys: [], cities: {} });
 const HIT = TL.hits, SEC = Object.fromEntries(TL.secs.map(s => [s.id, s]));
 const BEAT = TL.beat, BAR = TL.bar;

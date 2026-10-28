@@ -32,7 +32,7 @@ const SUB = { zh: '600 40px "Noto Sans SC"', en: '400 29px Oswald' };
 // a period "title strip" under the subtitles: a low dark band at the bottom of the gate, on every shot,
 // held through short gaps between cues so it never blinks on and off
 const SUBSPAN = (() => {
-  const iv = TL.lines.map((L, i) => { const nx = TL.lines[i + 1]; let t1 = L.t + Math.max(1.8, VD[L.id] + .6); if (nx) t1 = Math.min(t1, nx.t - .05); return [L.t, t1]; });
+  const iv = TL.lines.map((L, i) => { const nx = TL.lines[i + 1]; let t1 = L.t + Math.max(1.8, (VD[L.id] || 2.6) + .6); if (nx) t1 = Math.min(t1, nx.t - .05); return [L.t, t1]; });
   const out = [];
   for (const [a, b] of iv) { const l = out[out.length - 1]; if (l && a - l[1] < 1.0) l[1] = Math.max(l[1], b); else out.push([a, b]); }
   return out;
@@ -50,7 +50,7 @@ function subBand(t) {
 function subtitle(t) {
   for (let i = 0; i < TL.lines.length; i++) {
     const L = TL.lines[i], nx = TL.lines[i + 1];
-    let t1 = L.t + Math.max(1.8, VD[L.id] + .6); if (nx) t1 = Math.min(t1, nx.t - .05);
+    let t1 = L.t + Math.max(1.8, (VD[L.id] || 2.6) + .6); if (nx) t1 = Math.min(t1, nx.t - .05);
     if (t < L.t - .05 || t > t1) continue;
     const a = Math.min(seg(t, L.t - .05, L.t + .06), 1 - seg(t, t1 - .06, t1));
     X.save(); X.globalAlpha = a; X.textAlign = 'center'; X.textBaseline = 'alphabetic'; X.lineJoin = 'round';
