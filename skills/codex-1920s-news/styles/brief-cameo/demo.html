@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>短串场纪实快报 · 虚构静音小样</title>
+<style>
+body{margin:0;background:#151515;color:#eee;font:16px system-ui;text-align:center}
+main{max-width:960px;margin:24px auto;padding:0 16px}canvas{width:100%;height:auto;background:#181818}
+label{display:flex;align-items:center;gap:12px;margin-top:16px}input{flex:1}p{color:#bbb;line-height:1.6}
+</style>
+<main><h1>短串场纪实快报</h1><p>虚构新闻 · 代码绘制主持标志 · 静音。拖动时间查看串场；此小样不包含真实素材与声音。</p>
+<canvas id="screen" width="960" height="540"></canvas>
+<label>时间 <input id="time" type="range" min="0" max="11.958333" step="0.0416667" value="2.8"><output id="stamp"></output></label>
+<p><a href="README.md" style="color:#ddd">风格说明与调用契约</a></p></main>
+<script type="module">
+import{createCameoLayer,cameoState}from'./cameo-layer.mjs';
+const cv=document.querySelector('canvas'),c=cv.getContext('2d');
+// Generic geometric host; no user character or external image is copied.
+const sprite=document.createElement('canvas');sprite.width=100;sprite.height=140;
+const s=sprite.getContext('2d');s.fillStyle='#ddd';s.beginPath();s.arc(50,35,23,0,Math.PI*2);s.fill();
+s.fillRect(29,64,42,53);s.fillRect(12,67,17,10);s.fillRect(71,67,21,10);
+s.fillRect(31,117,11,17);s.fillRect(58,117,11,17);s.fillStyle='#222';s.fillRect(40,30,4,4);s.fillRect(57,30,4,4);
+const host=createCameoLayer(sprite,{padding:18,columns:14,rows:20});
+const events=[
+ {t0:2.2,t1:3.8,action:'wave',x:820,y:345,width:60,height:84},
+ {t0:6,t1:7,action:'nod',x:820,y:345,width:60,height:84},
+ {t0:10,t1:11.8,action:'wave',x:820,y:345,width:60,height:84}
+];
+function warp({x,y,u,action}){
+ const settle=Math.sin(Math.PI*u),arm=Math.exp(-(((x-83)/13)**4)-(((y-72)/16)**4));
+ const head=Math.max(0,Math.min(1,(62-y)/20));
+ return[x+head*2*Math.sin(u*Math.PI*2)*settle,
+ y+head*(action==='nod'?4:1)*settle-arm*(action==='wave'?9:1)*Math.sin(u*Math.PI*4)*settle];
+}
+const text=(str,x,y,size=24,align='center',color='#eee')=>{
+ c.font=`${size}px serif`;c.textAlign=align;c.fillStyle=color;c.fillText(str,x,y);
+};
+function render(t){
+ c.setTransform(1,0,0,1,0,0);c.globalAlpha=1;c.fillStyle='#1a1a1a';c.fillRect(0,0,960,540);
+ c.strokeStyle='#777';c.strokeRect(30,24,900,437);
+ if(t<2){
+  c.strokeStyle='#aaa';const r=65+Math.min(1,t)*20;c.beginPath();c.arc(480,175,r,0,Math.PI*2);c.stroke();
+  for(let i=-1;i<=1;i++){c.beginPath();c.ellipse(480,175,r*(.25+.3*(i+1)),r,Math.sin(t)*.2,0,Math.PI*2);c.stroke();}
+  for(const x of[100,860]){c.fillStyle='#ffffff15';c.beginPath();c.moveTo(x,460);c.lineTo(430+Math.sin(t)*80,30);c.lineTo(520+Math.sin(t)*80,30);c.fill();}
+  text('DAILY NEWS',480,335,52);text('虚构快报 · 风格小样',480,394,26);
+ }else{
+  text('DAILY / FICTIONAL DEMO',60,60,16,'left','#bbb');text('BRIEF CAMEO',900,60,16,'right','#bbb');
+  text(t<4?'让新闻成为主体':t<8?'素材与状态对应':'下期见',480,118,34);
+  c.strokeStyle='#777';c.beginPath();c.moveTo(65,145);c.lineTo(895,145);c.stroke();
+  if(t<10){
+   c.fillStyle='#d7d5ce';c.fillRect(110,200,300,185);c.strokeStyle='#555';c.strokeRect(123,213,274,159);
+   text(t<6?'新闻素材区':'已知事实示意',260,280,30,'center','#222');text('此处为虚构占位',260,325,18,'center','#444');
+   text(t<6?'画面提供证据':'保留信息的实际状态',620,250,27);text('字幕与来源保持清晰',620,308,23);
+   text('示例来源：虚构编辑记录',480,421,16,'center','#aaa');
+  }else{text('先看事实，再作判断',480,275,38);text('告别完成后自然结束',480,350,23);}
+  const event=events.find(e=>t>=e.t0&&t<e.t1);if(event)host.draw(c,t,event,warp);
+  c.fillStyle='#080808';c.fillRect(30,476,900,42);text(t<10?'新闻画面居中，主持只在必要时短暂参与。':'我们下期见。',480,505,22);
+ }
+ document.querySelector('output').textContent=t.toFixed(2)+' s';
+}
+document.querySelector('input').addEventListener('input',e=>render(+e.target.value));
+window.CAMEO={createCameoLayer,cameoState,events,warp};window.DUR=12;window.render=render;window.READY=true;
+render(2.8);
+</script></html>
